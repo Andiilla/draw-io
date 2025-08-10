@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.9" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.9" pages="4">
   <diagram name="ARIMAX" id="RwTynX86H7eJMr4MD3kp">
     <mxGraphModel dx="1090" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -330,6 +330,105 @@
         <mxCell id="f0EIcU_KDY9Bu2KFHcz4-29" value="Selesai" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
           <mxGeometry x="-9" y="298" width="120" height="40" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="DoCWOQ5vZuhO9cCJFyUH" name="lstm">
+    <mxGraphModel dx="1272" dy="917" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eYR-zTo1DFQ4oM_gXWry-1" value="Mulai" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry y="-48" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-2" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="eYR-zTo1DFQ4oM_gXWry-2" target="UyC43AeFsrS9Yvl04XP1-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-4" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="eYR-zTo1DFQ4oM_gXWry-2" target="UyC43AeFsrS9Yvl04XP1-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eYR-zTo1DFQ4oM_gXWry-2" value="Normalisasi dengan MinMax Scaler (0,1)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="20" width="120" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="eYR-zTo1DFQ4oM_gXWry-3" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eYR-zTo1DFQ4oM_gXWry-1" target="eYR-zTo1DFQ4oM_gXWry-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="175" y="226" as="sourcePoint" />
+            <mxPoint x="225" y="176" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-6" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UyC43AeFsrS9Yvl04XP1-1" target="UyC43AeFsrS9Yvl04XP1-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-1" value="Data Training" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-152" y="20" width="120" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-3" value="Data testing" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="152" y="27" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-8" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UyC43AeFsrS9Yvl04XP1-5" target="UyC43AeFsrS9Yvl04XP1-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-5" value="Transformasi data Strategi MIMO" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-152" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-10" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UyC43AeFsrS9Yvl04XP1-7" target="UyC43AeFsrS9Yvl04XP1-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-7" value="Membangun model LSTM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-152" y="172" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-12" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UyC43AeFsrS9Yvl04XP1-9" target="UyC43AeFsrS9Yvl04XP1-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-9" value="Hyperparameter tuning menggunakan GridSearchCV" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-152" y="254" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-14" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UyC43AeFsrS9Yvl04XP1-11" target="UyC43AeFsrS9Yvl04XP1-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-11" value="Memodelkan menggunakan parameter terbaik" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="252" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-13" value="Melakukan Prediksi" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="194" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-19" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UyC43AeFsrS9Yvl04XP1-16" target="UyC43AeFsrS9Yvl04XP1-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-16" value="Denormalisasi" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="103" width="120" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-17" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="UyC43AeFsrS9Yvl04XP1-13" target="UyC43AeFsrS9Yvl04XP1-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="28" y="251" as="sourcePoint" />
+            <mxPoint x="78" y="201" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-21" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UyC43AeFsrS9Yvl04XP1-18" target="UyC43AeFsrS9Yvl04XP1-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="212" y="197" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-18" value="Evaluasi performa model dengan MAPE, MAE dan RMSE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="152" y="103" width="120" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-24" value="Selesai" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="152" y="170" width="120" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="UyC43AeFsrS9Yvl04XP1-26" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="UyC43AeFsrS9Yvl04XP1-3" target="UyC43AeFsrS9Yvl04XP1-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="114" y="152" as="sourcePoint" />
+            <mxPoint x="164" y="102" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ST35aN4ZDvqxIMmfbQ6w" name="Hybrid ARIMAX-LSTM">
+    <mxGraphModel dx="426" dy="516" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
